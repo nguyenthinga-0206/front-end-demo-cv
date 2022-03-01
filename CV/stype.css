@@ -1,0 +1,265 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR1X3fc3guG465XWAGZyCyDddqVHLIsRTSXmvIHvWHIvJVVqZcqfBYiMFIo);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.border {
+    border: 10px solid #0d4b75;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: left;
+}
+
+.item3 {
+    grid-area: rigth;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header' 'left left rigth rigth';
+}
+
+.background-img {
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1596367407372-96cb88503db6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.border-img {
+    margin: 20px 20px 20px;
+    padding: 10px;
+    background: #fff;
+}
+
+.box {
+    --all: 0px;
+    width: 100%;
+    display: inline-block;
+    -webkit-mask: linear-gradient( 45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left, linear-gradient( -45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right, linear-gradient( 135deg, transparent 0 var(--top-left, var(--all)), #fff 0) top left, linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
+    -webkit-mask-size: 50.5% 50.5%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.border-img-cut {
+    --top-right: 20%;
+    --bottom-left: 20%
+}
+
+.row-25 {
+    height: 25%;
+}
+
+.column-10 {
+    width: 10%;
+}
+
+.column-15 {
+    width: 15%;
+}
+
+.column-20 {
+    width: 20%;
+}
+
+.column-25 {
+    width: 25%;
+}
+
+.column-35 {
+    width: 35%;
+}
+
+.column-40 {
+    width: 40%;
+}
+
+.column-45 {
+    width: 45%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-60 {
+    width: 60%;
+}
+
+.column-65 {
+    width: 65%;
+}
+
+.column-70 {
+    width: 70%;
+}
+
+.column-80 {
+    width: 80%;
+}
+
+.column-85 {
+    width: 85%;
+}
+
+.column-100 {
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.padding-header {
+    padding-left: 55px;
+}
+
+.padding-left-15 {
+    padding-left: 15%;
+}
+
+.content-pading {
+    padding-left: 20px;
+}
+
+.line-heigth {
+    line-height: 5px;
+}
+
+.font-weight-lighter {
+    font-weight: lighter
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.padding-left-20 {
+    padding-left: 20px;
+}
+
+.padding-top {
+    padding-top: 5%;
+}
+
+.color-aliceblue {
+    color: aliceblue;
+}
+
+.color-black {
+    color: black;
+}
+
+.uppercase-item {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.uppercase {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid dodgerblue;
+    /* margin-top: 0; */
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.box-bar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.skill-color {
+    background-color: dodgerblue;
+}
+
+.border-icon {
+    width: 25px;
+    height: 25px;
+    background: black !important;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.faa {
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    color: #0d4b75;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+.text {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .border-icon {
+        width: 30px;
+        height: 30px;
+        background: black !important;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h4 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 24px;
+        text-align: justify;
+    }
+}
